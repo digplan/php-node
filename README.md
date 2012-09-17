@@ -3,6 +3,8 @@ php-node
 
 ###Use PHP in nodejs, as Express view engine
 
+##### Push get, post variables into $_GET, $_POST - coming soon..
+
 #### $ npm install php-node
 
 ```javascript
