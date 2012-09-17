@@ -1,0 +1,12 @@
+{
+  "name"          : "php-node",
+  "description"   : "PHP file execution and view engine for Express",
+  "url"           : "http://github.com/dpweb/php-node/",
+  "keywords"      : ["util", "nodejs", "php", "express"],
+  "author"        : "C Borkert <ILIKECHEESE@dpsw.info>",
+  "repository": {
+  	"type": "git",
+		"url": "git://github.com/dpweb/php-node.git"
+  },
+  "version"       : "0.0.1"
+}
