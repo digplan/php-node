@@ -6,7 +6,7 @@ php-node
 #### $ npm install php-node
 
 ```javascript
-var render = require('./index.js')({bin:"c://php//php.exe"});
+var render = require('php-node')({bin:"c://php//php.exe"});
 
 render(__dirname+'/index.php', {}, function(e, r) {
     console.log(r);
@@ -15,7 +15,7 @@ render(__dirname+'/index.php', {}, function(e, r) {
 // use PHP as view engine in Express
 var express = require('express'),
 	app = express(),
-	phpnode = require('./index.js')({bin:"c:\\php\\php.exe"});
+	phpnode = require('php-node')({bin:"c:\\php\\php.exe"});
 
 app.set('views', __dirname);
 app.engine('php', phpnode);
