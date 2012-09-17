@@ -1,6 +1,6 @@
 var express = require('express'),
 	app = express(),
-	phpnode = require('php-node')({bin:"c:\\php\\php.exe"});
+	phpnode = require('./index.js')({bin:"c:\\php\\php.exe"});
 
 app.set('views', __dirname);
 app.engine('php', phpnode);

@@ -3,20 +3,19 @@ php-node
 
 ###Use PHP in nodejs, as Express view engine
 
-####app.js
-```javascript
-// parse a PHP file and get output (php is installed and on your path)
-var render = require('php-node')();
-render('index.php');
+#### $ npm install php-node
 
-// specify path to PHP
-var render = require('php-node')({bin:"c:\\php\\php.exe"});
-render('index.php');
+```javascript
+var render = require('./index.js')({bin:"c://php//php.exe"});
+
+render(__dirname+'/index.php', {}, function(e, r) {
+    console.log(r);
+})
 
 // use PHP as view engine in Express
 var express = require('express'),
 	app = express(),
-	phpnode = require('php-node')({bin:"c:\\php\\php.exe"});
+	phpnode = require('./index.js')({bin:"c:\\php\\php.exe"});
 
 app.set('views', __dirname);
 app.engine('php', phpnode);
